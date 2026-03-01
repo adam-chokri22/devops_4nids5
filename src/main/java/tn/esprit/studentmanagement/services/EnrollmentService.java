@@ -19,7 +19,7 @@ public class EnrollmentService implements IEnrollment {
 
     @Override
     public Enrollment getEnrollmentById(Long idEnrollment) {
-        return enrollmentRepository.findById(idEnrollment).get();
+    return repository.findById(id).orElseThrow(() -> new RuntimeException("Not found"));
     }
 
     @Override
