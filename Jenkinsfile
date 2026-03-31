@@ -12,7 +12,7 @@ pipeline {
             steps {
                 git branch: 'master',
                     changelog: false,
-                    credentialsId: 'jenkins-github',
+                    credentialsId: 'jenkis-github-https-cred',
                     url: 'https://github.com/adam-chokri22/devops_4nids5.git'
             }
         }
